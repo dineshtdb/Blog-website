@@ -36,8 +36,20 @@ header nav{
 }
 .text h2{
    margin:0;
-   font-size:1.6rem;
+   font-size:1.8rem;
 }
-.text p{
-   
+.post .info{
+  margin: 6px 0;
+  color: #888;
+  font-size: .7rem;
+  font-weight:bold;
+  display: flex;
+  gap: 10px;
+}
+.author{
+  color: #333;
+}
+.summary{
+  margin: 10px 0;
+  line-height:1.4rem;
 }
