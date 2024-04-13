@@ -95,6 +95,12 @@ app.post('/login', async (req,res) => {
        
     );
   });
+
+  app.get('/post/:id',async(req,res)=>{
+    const {id}=req.params;
+    const postDec=await Post.findById(id).populate('author',['username']);
+    res.json(postDec)
+  })
 app.listen(4000, () => {
     console.log('Server is running on port 4000');
 });
