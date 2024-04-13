@@ -9,6 +9,7 @@ export default function Header() {
       credentials: 'include',
     }).then(response => {
       response.json().then(userInfo => {
+        console.log(userInfo);
         setUserInfo(userInfo);
       });
     });
@@ -26,7 +27,7 @@ export default function Header() {
 
   return (
     <header>
-      <Link to="/" className="logo">SamosaSakura</Link>
+      <Link to="/" className="logo">MyBlog</Link>
       <nav>
         {username && (
           <>

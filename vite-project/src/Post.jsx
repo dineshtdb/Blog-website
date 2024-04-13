@@ -1,18 +1,19 @@
 import React from "react"
+import {formatISO9075} from "date-fns";
 import myImage from './assets/8406694.jpg';
-function Post(){
+function Post({title,summary,cover,content,createdAt,author}){
     return(
     
         <div className="post">
-          <div className="imge"><img src={myImage}/></div>
+        <div className="imge"><img src={`http://localhost:4000/${cover}`} alt={title} /></div>
        <div className="text">
-        <h2>One Piece new updates</h2>
+        <h2>{title}</h2>
         <p className="info">
-          <a className="author"> Dinesh babu</a>
-          <time>2023-01- 16:00</time>
+          <a className="author">{author.username}</a>
+          <time>{formatISO9075(new Date(createdAt))}</time>
          
         </p>
-        <p className='summary'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nisi, dicta iste doloremque soluta mollitia quaerat corporis saepe veniam ut blanditiis quo praesentium repellat perspiciatis, perferendis expedita incidunt, omnis eum.</p>
+        <p className='summary'>{summary}</p>
         </div>
         </div>
         
