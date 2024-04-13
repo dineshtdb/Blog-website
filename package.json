@@ -2,9 +2,9 @@
   "name": "blog-website",
   "version": "1.0.0",
   "description": "",
-  "main": "Index.jsx",
+  "main": "Index.js",
   "scripts": {
-    "start": "node Index.jsx"
+    "start": "node Index.js"
   }
   "author": "",
   "license": "ISC",
