@@ -2,7 +2,7 @@
   "name": "blog-website",
   "version": "1.0.0",
   "description": "",
-  "main": "main.jsx",
+  "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
